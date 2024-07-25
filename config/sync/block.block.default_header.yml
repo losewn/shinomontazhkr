@@ -1,0 +1,25 @@
+uuid: 5b2c10d5-0fb9-44d6-9e25-bf7532ee38d4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9233747d-4757-4535-a8bf-6ba4f646df73'
+  module:
+    - block_content
+  theme:
+    - default
+id: default_header
+theme: default
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:9233747d-4757-4535-a8bf-6ba4f646df73'
+settings:
+  id: 'block_content:9233747d-4757-4535-a8bf-6ba4f646df73'
+  label: Header
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

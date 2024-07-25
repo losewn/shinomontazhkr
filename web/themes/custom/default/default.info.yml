@@ -1,0 +1,15 @@
+name: Default
+type: theme
+description: Custom theme "Default", maked from 'Starterkit theme'
+core_version_requirement: ^10
+logo: 'images/logo.png'
+base theme: starterkit_theme
+libraries:
+  - default/global-styling
+# Regions, quote the names
+regions:
+  header: 'Header'
+#  mobile_menu: 'Mobile Menu'
+  content: 'Content'
+  footer: 'Footer'
+  subfooter: 'Subfooter'

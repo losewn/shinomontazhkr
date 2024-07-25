@@ -1,0 +1,10 @@
+uuid: 0badcd2d-c21d-40dd-892b-64ef648d0a5a
+langcode: en
+status: true
+dependencies: {  }
+id: our_work_item
+label: 'Our Work item'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

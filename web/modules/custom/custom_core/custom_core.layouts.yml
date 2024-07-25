@@ -1,0 +1,17 @@
+webhouse_fluid:
+  label: 'Theme fluid (full width)'
+  category: 'Theme layout'
+  class: '\Drupal\custom_core\Plugin\Layout\FluidColumn'
+  template: templates/paragraphs/custom_core_fluid
+  regions:
+    content_paragraphs:
+      label: 'Content paragraphs'
+
+webhouse_container:
+  label: 'Theme container'
+  category: 'Theme layout'
+  class: '\Drupal\custom_core\Plugin\Layout\ContainerColumn'
+  template: templates/paragraphs/custom_core_container
+  regions:
+    content_paragraphs:
+      label: 'Content paragraphs'

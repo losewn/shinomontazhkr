@@ -1,0 +1,19 @@
+uuid: 403e493e-4a93-4561-bf07-8a2ab67324ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_plain_long
+    - paragraphs.paragraphs_type.services_item
+id: paragraph.services_item.field_text_plain_long
+field_name: field_text_plain_long
+entity_type: paragraph
+bundle: services_item
+label: 'Text plain long'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

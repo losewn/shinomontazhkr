@@ -1,0 +1,82 @@
+# Ignore binaries.
+/bin
+
+# Ignore paths that contain user-generated content.
+web/sites/*/services.yml
+web/sites/*/settings.local.php
+web/sites/*/settings.php
+web/files
+web/sites/*/files
+web/sites/*/private
+acquia-files
+/cache
+
+# Ignore Drupal's file directory
+/web/sites/*/files/
+
+# Composerize settings
+vendor/
+web/core/
+web/vendor/
+web/libraries/
+web/modules/contrib
+web/themes/contrib
+web/profiles/contrib
+fin bash
+# Ignore node modules
+node_modules/
+
+# Ignore temporary directories
+.idea/
+
+# Ignore .env files as they are personal
+/.env
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.bz2
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tgz
+
+# Logs and databases #
+######################
+*.log
+*.sql
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon
+*.unison.tmp
+
+Thumbs.db
+._*
+
+# Vim generated files #
+######################
+*.un~
+
+# SASS #
+##########
+.sass-cache
+
+# Not ignore #
+##############
+!/db/*.sql
+
+# Xdebug configs #
+##################
+.vscode/launch.json
+/.editorconfig
+/.gitattributes
+
+/tmp
+/private

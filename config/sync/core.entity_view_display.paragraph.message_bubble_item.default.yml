@@ -1,0 +1,49 @@
+uuid: 27636daf-f309-4087-b4c9-28dd381dd4b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.message_bubble_item.field_hex_color
+    - field.field.paragraph.message_bubble_item.field_media_image
+    - field.field.paragraph.message_bubble_item.field_name
+    - field.field.paragraph.message_bubble_item.field_text_plain
+    - paragraphs.paragraphs_type.message_bubble_item
+id: paragraph.message_bubble_item.default
+targetEntityType: paragraph
+bundle: message_bubble_item
+mode: default
+content:
+  field_hex_color:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_media_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_text_plain:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

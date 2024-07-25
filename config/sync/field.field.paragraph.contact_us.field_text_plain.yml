@@ -1,0 +1,19 @@
+uuid: 4b932b5a-ffd3-41c6-8f81-8e95ed0fffa2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_plain
+    - paragraphs.paragraphs_type.contact_us
+id: paragraph.contact_us.field_text_plain
+field_name: field_text_plain
+entity_type: paragraph
+bundle: contact_us
+label: 'Text plain'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,29 @@
+global-styling:
+  js:
+#    https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js: { }
+#    https://unpkg.com/imagesloaded@4.1.4/imagesloaded.pkgd.min.js: { }
+    js/modernizr-latest.js: { }
+    js/jquery-1.8.2.min.js: { }
+    js/bootstrap.min.js: { }
+    js/jquery.isotope.min.js: { }
+    js/jquery.fancybox.pack.js: { }
+    js/jquery.nav.js: { }
+    js/jquery.fittext.js: { }
+#    js/waypoints.js: { }
+    js/jquery.flexslider.js: { }
+    js/owl.carousel.js: { }
+
+#    http://someothersite.com/external.js: { }
+    js/custom.js: { }
+  css:
+    component:
+      css/animate.css: { }
+      css/bootstrap.min.css: { }
+      css/flexslider.css: { }
+      css/font-awesome.min.css: { }
+      css/isotope.css: { }
+      css/jquery.fancybox.css: { }
+      css/owl.carousel.css: { }
+      css/styles.css: { }
+  dependencies:
+    - custom_core/drupal

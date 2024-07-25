@@ -1,0 +1,19 @@
+uuid: 4b1e5eac-1722-4811-aba9-888efaf41df7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_plain_long
+    - paragraphs.paragraphs_type.faq_item
+id: paragraph.faq_item.field_text_plain_long
+field_name: field_text_plain_long
+entity_type: paragraph
+bundle: faq_item
+label: 'Text plain long'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

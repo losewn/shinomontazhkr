@@ -1,0 +1,51 @@
+uuid: b3f0cf75-9715-4aba-a6ba-bb86e343afc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.message_bubble_item.field_hex_color
+    - field.field.paragraph.message_bubble_item.field_media_image
+    - field.field.paragraph.message_bubble_item.field_name
+    - field.field.paragraph.message_bubble_item.field_text_plain
+    - paragraphs.paragraphs_type.message_bubble_item
+  module:
+    - media_library
+id: paragraph.message_bubble_item.default
+targetEntityType: paragraph
+bundle: message_bubble_item
+mode: default
+content:
+  field_hex_color:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_media_image:
+    type: media_library_widget
+    weight: 2
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_name:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_text_plain:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

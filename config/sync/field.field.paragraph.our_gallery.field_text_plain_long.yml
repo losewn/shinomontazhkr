@@ -1,0 +1,19 @@
+uuid: 05e3f965-ab48-4ff9-9e3c-1acc0afb34ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_plain_long
+    - paragraphs.paragraphs_type.our_gallery
+id: paragraph.our_gallery.field_text_plain_long
+field_name: field_text_plain_long
+entity_type: paragraph
+bundle: our_gallery
+label: 'Text plain long'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

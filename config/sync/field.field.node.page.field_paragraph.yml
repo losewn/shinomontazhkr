@@ -1,0 +1,97 @@
+uuid: b7dfb0c3-7c69-4a6c-9e0e-4448ce249ec0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph
+    - node.type.page
+    - paragraphs.paragraphs_type.contact_us
+    - paragraphs.paragraphs_type.faq
+    - paragraphs.paragraphs_type.layout
+    - paragraphs.paragraphs_type.map
+    - paragraphs.paragraphs_type.message_bubble
+    - paragraphs.paragraphs_type.our_gallery
+    - paragraphs.paragraphs_type.our_work
+    - paragraphs.paragraphs_type.services
+    - paragraphs.paragraphs_type.slider
+    - paragraphs.paragraphs_type.team
+  module:
+    - entity_reference_revisions
+id: node.page.field_paragraph
+field_name: field_paragraph
+entity_type: node
+bundle: page
+label: Paragraph
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      layout: layout
+      slider: slider
+      contact_us: contact_us
+      faq: faq
+      map: map
+      our_gallery: our_gallery
+      our_work: our_work
+      services: services
+      team: team
+      message_bubble: message_bubble
+    negate: 0
+    target_bundles_drag_drop:
+      contact_us:
+        weight: -32
+        enabled: true
+      faq:
+        weight: -31
+        enabled: true
+      faq_item:
+        weight: -30
+        enabled: false
+      layout:
+        weight: -35
+        enabled: true
+      map:
+        weight: -29
+        enabled: true
+      message_bubble:
+        weight: -20
+        enabled: true
+      message_bubble_item:
+        weight: -19
+        enabled: false
+      our_gallery:
+        weight: -28
+        enabled: true
+      our_gallery_item:
+        weight: -27
+        enabled: false
+      our_work:
+        weight: -26
+        enabled: true
+      our_work_item:
+        weight: -25
+        enabled: false
+      services:
+        weight: -24
+        enabled: true
+      services_item:
+        weight: -23
+        enabled: false
+      slider:
+        weight: -34
+        enabled: true
+      slider_item:
+        weight: -33
+        enabled: false
+      team:
+        weight: -22
+        enabled: true
+      team_item:
+        weight: -21
+        enabled: false
+field_type: entity_reference_revisions

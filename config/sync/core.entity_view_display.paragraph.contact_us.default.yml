@@ -1,0 +1,49 @@
+uuid: 09ab1ec7-f8c5-4fd0-bea9-3533301acae4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact_us.field_media_image
+    - field.field.paragraph.contact_us.field_text_formatted_long
+    - field.field.paragraph.contact_us.field_text_plain
+    - field.field.paragraph.contact_us.field_text_plain_long
+    - paragraphs.paragraphs_type.contact_us
+  module:
+    - text
+id: paragraph.contact_us.default
+targetEntityType: paragraph
+bundle: contact_us
+mode: default
+content:
+  field_media_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_text_formatted_long:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_text_plain:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_text_plain_long:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden: {  }

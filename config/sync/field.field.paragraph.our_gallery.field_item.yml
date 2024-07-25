@@ -1,0 +1,61 @@
+uuid: 1039ba6f-4b64-4f36-924a-4829484d6b79
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_item
+    - paragraphs.paragraphs_type.our_gallery
+    - paragraphs.paragraphs_type.our_gallery_item
+  module:
+    - entity_reference_revisions
+id: paragraph.our_gallery.field_item
+field_name: field_item
+entity_type: paragraph
+bundle: our_gallery
+label: Item
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      our_gallery_item: our_gallery_item
+    negate: 0
+    target_bundles_drag_drop:
+      faq:
+        weight: 10
+        enabled: false
+      faq_item:
+        weight: 11
+        enabled: false
+      layout:
+        weight: 4
+        enabled: false
+      our_gallery:
+        weight: 15
+        enabled: false
+      our_gallery_item:
+        weight: 16
+        enabled: true
+      our_work:
+        weight: 9
+        enabled: false
+      our_work_item:
+        weight: 10
+        enabled: false
+      services:
+        weight: 7
+        enabled: false
+      services_item:
+        weight: 8
+        enabled: false
+      slider:
+        weight: 5
+        enabled: false
+      slider_item:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

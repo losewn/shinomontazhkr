@@ -1,0 +1,29 @@
+uuid: fde0ba94-4a74-4498-b921-9e0afe95f9a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.our_work_item.field_text_plain
+    - field.field.paragraph.our_work_item.field_text_plain_long
+    - paragraphs.paragraphs_type.our_work_item
+id: paragraph.our_work_item.default
+targetEntityType: paragraph
+bundle: our_work_item
+mode: default
+content:
+  field_text_plain:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_text_plain_long:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden: {  }

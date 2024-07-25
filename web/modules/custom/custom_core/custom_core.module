@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * @file
+ * Contains custom_core.module.
+ */
+
+use \Drupal\Core\Entity\EntityInterface;
+use \Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+
+/**
+ * Implements hook_ENTITY_TYPE_view().
+ */
+function custom_core_paragraph_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+  if ($entity->getEntityTypeId() == 'paragraph') {
+    if (($entity->bundle() == 'contact')) {
+
+      $data = [];
+
+      $data['field_form'] = !$entity->get('field_form')->isEmpty() ? $entity->get('field_form')->first()->value : '';
+
+      $form = \Drupal::formBuilder()->getForm('Drupal\custom_core\Form\ContactParagraphForm', $data);
+      $form['#attributes']['class'][] = 'row';
+      $build['contact_form'] = $form;
+      $build['contact_form']['#weight'] = 99;
+    }
+  }
+}

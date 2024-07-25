@@ -1,0 +1,31 @@
+{%
+  set classes = [
+  'container',
+  'layout-paragraphs',
+  'layout-paragraphs--webhouse-one-column-container',
+]
+%}
+
+{% set my_attribute = create_attribute() %}
+
+{%
+  set additional_classes = [
+    settings.additional_class
+  ]
+%}
+
+{% if content %}
+  <div{{ attributes.addClass(classes) }}>
+    {% if additional_classes %}
+      <div{{ my_attribute.addClass(additional_classes) }}>
+    {% endif %}
+      {% if (content.content_paragraphs)  %}
+        <div {{ region_attributes.content_paragraphs.addClass('layout__region', 'layout__region--container') }}>
+          {{ content.content_paragraphs }}
+        </div>
+      {% endif %}
+    {% if additional_classes %}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}

@@ -1,0 +1,28 @@
+uuid: befe93c7-e6af-43ba-8964-cec9c86f6058
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.page.body
+    - field.field.node.page.field_meta
+    - field.field.node.page.field_paragraph
+    - node.type.page
+  module:
+    - user
+_core:
+  default_config_hash: M_Y8L5tfmhx7DR143E05YyZSpvgil6VFvqcfBWykalg
+id: node.page.full
+targetEntityType: node
+bundle: page
+mode: full
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_meta: true
+  field_paragraph: true

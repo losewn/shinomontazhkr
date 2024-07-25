@@ -1,0 +1,25 @@
+uuid: b12f80ac-937f-44d1-bdd6-85be80a6309c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c2fe141c-c81e-4fa8-a788-767e5777efd1'
+  module:
+    - block_content
+  theme:
+    - default
+id: default_footercopyright
+theme: default
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:c2fe141c-c81e-4fa8-a788-767e5777efd1'
+settings:
+  id: 'block_content:c2fe141c-c81e-4fa8-a788-767e5777efd1'
+  label: 'Footer copyright'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

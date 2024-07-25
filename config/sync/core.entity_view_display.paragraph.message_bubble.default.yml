@@ -1,0 +1,24 @@
+uuid: 114c10e7-99ca-4fd7-b168-b32430bd53be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.message_bubble.field_item
+    - paragraphs.paragraphs_type.message_bubble
+  module:
+    - entity_reference_revisions
+id: paragraph.message_bubble.default
+targetEntityType: paragraph
+bundle: message_bubble
+mode: default
+content:
+  field_item:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

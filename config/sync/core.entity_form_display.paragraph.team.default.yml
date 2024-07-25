@@ -1,0 +1,53 @@
+uuid: 851fe204-2d53-4a9f-ba9c-8ed9ca4dd0a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.team.field_item
+    - field.field.paragraph.team.field_text_plain
+    - field.field.paragraph.team.field_text_plain_long
+    - paragraphs.paragraphs_type.team
+  module:
+    - paragraphs
+id: paragraph.team.default
+targetEntityType: paragraph
+bundle: team
+mode: default
+content:
+  field_item:
+    type: paragraphs
+    weight: 3
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_text_plain:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_text_plain_long:
+    type: string_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

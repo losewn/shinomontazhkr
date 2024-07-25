@@ -1,0 +1,16 @@
+{%
+  set classes = [
+  'layout-paragraphs',
+  'layout-paragraphs--webhouse-one-column-fluid'
+]
+%}
+
+{% if content %}
+  <div{{ attributes.addClass(classes) }}>
+    {% if (content.content_paragraphs)  %}
+      <div {{ region_attributes.content_paragraphs.addClass('layout__region', 'layout__region--container') }}>
+        {{ content.content_paragraphs }}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}

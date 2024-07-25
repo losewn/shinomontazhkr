@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: ab6e3729-1464-4f95-9b4b-f123fba680ad
+name: 'Шиномонтаж Кривий Ріг'
+mail: admin@example.com
+slogan: ''
+page:
+  403: /node/2
+  404: /node/3
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
