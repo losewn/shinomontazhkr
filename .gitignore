@@ -78,5 +78,5 @@ Thumbs.db
 /.editorconfig
 /.gitattributes
 
-/tmp
-/private
+tmp
+private
